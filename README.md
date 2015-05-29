@@ -5,7 +5,7 @@ Configuration hibernate connect two databases
 
 1. create your database in mysql 
 
-# bash init_databases.sh
+   # bash init_databases.sh
 
 2. open your eclipse and import maven project (hibernateExample)
 
