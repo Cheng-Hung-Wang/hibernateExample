@@ -1,7 +1,7 @@
 # hibernateExample
 
 
-Configuration hibernate connect two databases
+Configuration hibernate(4.3.10) connect two databases
 
 1. create your database in mysql 
 
@@ -22,3 +22,16 @@ Configuration hibernate connect two databases
    Success update to db 89216530
 
    your databases stock1 and stock2 will update the row datab 
+
+3. If you need to use hibernate version 3.X, in pom.xml add some depedency
+
+   
+   <dependency>
+ 	<groupId>javassist</groupId>
+    	<artifactId>javassist</artifactId>
+    	<version>3.12.1.GA</version>
+   </dependency>
+
+   
+
+   
