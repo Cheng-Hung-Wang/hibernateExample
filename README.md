@@ -1,36 +1,41 @@
-# hibernateExample
-
+hibernateExample
+==================
 
 Configuration hibernate(4.3.10) connect two databases
+-------------------------------------------------------
 
-1. create your database in mysql 
 
-   \# bash init_databases.sh
+### STEP 1
 
-2. open your eclipse and import maven project (hibernateExample)
+< create your database in mysql 
 
-   and run main.java
+<   \# bash init_databases.sh
 
-   you will see like this
+### STEP 2
 
-   Hibernate: insert into stock1.stock (STOCK_CODE, STOCK_NAME) values (?, ?)
+< open your eclipse and import maven project (hibernateExample)
 
-   Success update to db 89216530
+< and run main.java
 
-   Hibernate: insert into stock2.stock (STOCK_CODE, STOCK_NAME) values (?, ?)
+< you will see like this
 
-   Success update to db 89216530
+< < Hibernate: insert into stock1.stock (STOCK_CODE, STOCK_NAME) values (?, ?)
 
-   your databases stock1 and stock2 will update the row datab 
+< < Success update to db 89216530
 
-3. If you need to use hibernate version 3.X, in pom.xml add some depedency
+< < Hibernate: insert into stock2.stock (STOCK_CODE, STOCK_NAME) values (?, ?)
 
-   
-   <dependency>
- 	<groupId>javassist</groupId>
+< < Success update to db 89216530
+
+< your databases stock1 and stock2 will update the row datab 
+
+### Note
+    If you need to use hibernate version 3.X, in pom.xml add some depedency
+    <dependency>
+	<groupId>javassist</groupId>
     	<artifactId>javassist</artifactId>
     	<version>3.12.1.GA</version>
-   </dependency>
+    </dependency>
 
    
 
